@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --gaming-font-family: "Kode Mono", monospace;
+    --text-font-family: "Anta", sans-serif;
+    --primary-background: rgb(2, 3, 21);
+    --primary-font-color: whitesmoke;
+    --secondary-font-color: black;
+    --hover-color: rgb(206, 206, 206);
+    --heading-size: 37px;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* header and navbar style */
+.logo {
+    margin-right: 15%;
+}
+.logo > h1{
+    color:var(--primary-font-color);
+    font-size: 40px;
+    font-family: var(--text-font-family);
+}
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #080f22, #080f22, #145567);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.navbar{
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all 0.2s linear;
+    list-style: none;
+}
+.nav-item:hover {
+    background-color: var(--hover-color);
+}
+.nav-item:hover a {
+    color: var(--secondary-font-color);
+}
+.nav-item > a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--gaming-font-family);
+}
+header > .user {
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+header>.user>.btn{
+    width: 5vw;
+    height: 5vh;
+    border-radius: 18px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #145567, #145567, white);
+    border: 1px solid var(--primary-font-color);
+    position: relative;
+    overflow: hidden;
+}
+header>.user>.btn>p{
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    z-index: 5;
+}
+header>.user>.btn>.btn-hover-background{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    background-image: linear-gradient(to bottom right, #080f22, #145567);
+    transition: all 0.3s linear;
+}
+header>.user>.btn:hover > p{
+    color: var(--primary-font-color);
+}
+header>.user>.btn:hover > div{
+    right: 0;
+}
+
+/* main body style */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #080f22, #080f22, #145567);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.container>.intro {
+    width: 40vw;
+    position: relative;
+    /* top: 30%;
+    left: 10%; */
+}
+.container> .intro >.intro-heading {
+    color: var(--primary-font-color);
+    font-family: var(--text-font-family);
+    font-size: var(--heading-size);
+}
+.container> .intro >.intro-sub-heading {
+    color: var(--primary-font-color);    
+    font-family: var(--text-font-family);
+    padding: 8px 0;
+}
+.container> .intro >.intro-text {
+    color: var(--primary-font-color);    
+    font-family: var(--font-family);
+    letter-spacing: 2px;
+    font-family: var(--gaming-font-family);
+    line-height: 20px;
+}
+.container>.coding-video-container {
+    width: 39vw;
+    height: 44vh;
+}
+.container>.coding-video-container >video {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 80px;
+    box-shadow: 10px 10px 15px 10px #080f22;
+}
